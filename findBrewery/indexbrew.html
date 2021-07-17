@@ -5,8 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find A Brewery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel= "stylesheet" href="./assets/stylebrewery.css">
 </head>
 <body>
-    <h1></h1>
+   <main> 
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo"><img src="../assets/images/favicon.ico" alt="logo"></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="badges.html">Brewery Finder</a></li>
+                <li><a href="collapsible.html">Local Brews Feed</a></li>
+            </ul>
+        </div>
+    </nav>
+     <div class="row">
+           <h2>Find a Brewery Near You</h2>
+           <input id="citySearched" type="text" placeholder="City Name">
+           <button id="submitBtn" class="btn-large">Search</button>
+     </div>
+     <div>
+         <div id= "map"></div>
+     </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="assets/brew.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8FUlg5PThX8oT4_Vyqb7kd-dN_nvCEeM&callback=initMap"></script>
 </body>
 </html>
