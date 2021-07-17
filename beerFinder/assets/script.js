@@ -5,24 +5,19 @@
   var Austin = [];
   var SaintLouis = [];
   var Milwaukee = [];
-  var settings = {
-    async: true,
-    crossDomain: true,
-    url: "https://api.kroger.com/v1/locations",
-    method: "GET",
-    headers: {
-      Accept: "application/json",
-      Authorization: "Bearer {loc-ale-80ea2dcd3ae9d85025ff2456d29800d95347972863607474486:ebBv3wMQ8trka5gzeIW07QRDLbs24p9sjizxJ5XN}"
-    }
-  }
+  var apiClientSecret = "ebBv3wMQ8trka5gzeIW07QRDLbs24p9sjizxJ5XN"
+  
+  $.ajax({
+      url: "https://api.openbrewerydb.org/breweries?by_city=san_diego",
+      method: "GET"
+  }).then(function (response) {
+    console.log(response);
+  });
+  
 
   $(document).ready(function(){
     $('.parallax').parallax();
   });
   
-//   $.ajax(settings)
-//     .then(function(data) {
-//     console.log(data);
-//   });
   
   
