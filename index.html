@@ -4,25 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="icon" href="assets/images/favicon.ico">
     <title>Loc-Ale</title>
 </head>
 <body>
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo"><img src="../assets/images/favicon.ico" alt="logo"></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="./findBrewery/indexbrew.html">Brewery Finder</a></li>
-                <li><a href="./beerFinder/index.html">Beer Finder</a></li>
-                <li><a href="collapsible.html">Local Brews Feed</a></li>
-            </ul>
-        </div>
-    </nav>
-    <h1>COMING SOON TO A CITY NEAR YOU!!!</h1>
-    <h1>Ham hocks for dinner</h1>
+    <div class="slider fullscreen">
+        <ul class="slides">
+            <li>
+              <img src="./assets/images/breweryImage1.jpg"> <!-- random image -->
+              <div class="caption center-align">
+                <h3>Loc-Ale</h3>
+                <h5 class="light grey-text text-lighten-3">Brews near yous!</h5>
+                <a class="waves-effect waves-light btn-large modal-trigger" id="enterWebsite" href="#modal1"><i class="material-icons left">cloud</i>Enter</a>
+              </div>
+            </li>
+        </ul>
+        <div id="modal1" class="modal yellow">
+            <div class="modal-content black-text">
+              <h4>Welcome to Loc-Ale, the local brewery finder!
+              </h4>
+              <p>By entering a city name and selecting "Agree", you are confirming that you are at least 21 years of age.</p>
+            </div>
+            <div class="container">
+              <div class="input-field col s6">
+                <input id="cityInput" type="text" class="validate">
+                <label for="cityInput">Enter a city name!</label>
+              </div>
+            </div>
+            <div class="modal-footer yellow">
+                <a href="#!" class="modal-close waves-effect waves-light btn-small" id="enterLandingPage"><i class="material-icons right">cloud</i>Agree</a>        
+            </div>
+          </div>
+    </div>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="assets/script.js"></script>
 </body>
