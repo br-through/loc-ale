@@ -17,8 +17,9 @@ function initMap() {
   map = new google.maps.Map(document.getElementById("map"), center);
 
   var geocoder = new google.maps.Geocoder();
-  document.getElementById("submitBtn").addEventListener("click", function () {
+  $("#submitBtn").on("click", function () {
     geocodeLocation(geocoder, map);
+   
   })
 };
 
@@ -34,6 +35,7 @@ function geocodeLocation(geocoder, resultsMap) {
 function breweryAPI() {
   var citySearched = $("#citySearched").val();
   //changed amt of data coming back due to incomplete information returning
+  //do this w an ajax call to make this more consistent w jquery 
   fetch("https://api.openbrewerydb.org/breweries?per_page=30&by_city=" + citySearched)
     .then(function (response) {
       return response.json();
@@ -42,12 +44,16 @@ function breweryAPI() {
       console.log(data)
       for (i = 0; i < data.length; i++) {
         var namesOfBrewery= data[i].name;
+        // console.log(namesOfBrewery)
+        // console.log(namesOfBrewery.length)
+
         var addressOfBrewery = data[i].street;
-        console.log( addressOfBrewery)
+        // console.log( addressOfBrewery)
         var longitude = JSON.parse(data[i].longitude);
         // console.log(typeof longitude)
         var latitude = JSON.parse(data[i].latitude);
         //go back and dbl check to see if any names of brewery are null. 
+        //read more about !== and !=
         if (longitude != null && latitude != null && addressOfBrewery!=null && namesOfBrewery) {
           const addBeerMarker = new google.maps.Marker({
             position: {
@@ -71,19 +77,20 @@ function breweryAPI() {
             map,
             shouldFocus: false,
           });
+          //addListner???
           addBeerMarker.addListener("click", infoWindowOnMarker)
 
-          //this might be where i have to move the infowindow code so that the window opens on click
+          // this might be where i have to move the infowindow code so that the window opens on click
         }
       }
 
     })
 };
 
-// function infoWindowOnMarker() {
-//   console.log("this")
+function infoWindowOnMarker() {
+  console.log("this")
 
-// }
+}
 //CAN STILL USE THIS AS SOON AS GOOGLE MAP LAUNCHES 
 // function getCurrentLocation(){
   //     if (navigator.geolocation) {
