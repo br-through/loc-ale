@@ -1,3 +1,44 @@
 .laLogo{
     margin-top: 6px;
+    margin-left: 4px;
 }
+
+.header{
+    text-shadow: 4px 3px chocolate;
+    color: #3B1E08;
+    font-family: 'Cinzel', cursive;
+
+}
+
+.title{
+    color: #3B1E08;
+    font-family: 'Cinzel', cursive;
+    
+}
+
+p{
+    font-family: 'IM Fell DW Pica SC', serif;
+}
+
+li{
+    font-family: 'IM Fell DW Pica SC', serif;
+}
+
+.brImage{
+    background-image: url(https://www.ambassadorfenceco.com/wp-content/uploads/2020/01/Dallas-Wood-Fence.jpg);
+    border: 2px solid black;
+}
+
+.brColor{
+    padding: 1%;
+    margin: auto;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+
+.title{
+    font-size: 1.3em;
+    text-decoration: underline;
+}
+
+
