@@ -1,82 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="../assets/images/favicon.ico">
-    <title>Loc-Ale</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=IM+Fell+DW+Pica+SC&display=swap" rel="stylesheet">
+  <link rel="icon" href="../assets/images/favicon.ico">
+  <title>Loc-Ale</title>
 </head>
+
 <body>
-    <nav>
-        <div class="nav-wrapper indigo darken-4">
-            <a href="#" class="brand-logo center"><span class="deep-orange-text">Brews Articles</span></a>
-          <a href="#!" class="brand-logo right"><img src="../assets/images/favicon.ico" alt="logo" class="laLogo"></a>
-          <ul class="left hide-on-med-and-down">
-            <li><a href="../index.html"><span class="orange-text">Home</span></a></li>
-            <li><a href="../beerFinder/index.html"><span class="deep-orange-text">Find a Beer</span></a></li>
-            <li><a href="#"><span class="orange-text">Find a Brewery</span></a></li>
-          </ul>
-        </div>
-      </nav>
-    
+  <nav>
+    <div class="nav-wrapper orange lighten-1">
+      <a href="#" class="brand-logo center"><span class="title">Brews Articles</span></a>
+      <a href="#!" class="brand-logo left"><img src="../assets/images/favicon.ico" alt="logo" class="laLogo"></a>
+      <ul class="right hide-on-med-and-down">
+        <li class="active lighten-2"><a href="../index.html" class="black-text flow-text">Brews Feed</a></li>
+        <li><a href="../beerFinder/index.html" class="black-text flow-text">Brewery Info</a></li>
+        <li><a href="#" class="black-text flow-text">Brewery Map</a></li>
+      </ul>
+    </div>
+  </nav>
 
-      <div class="parallax-container">
-        <div class="parallax"><img src="/assets/images/2019-beer-round-up-hoppy-ales-lagers-and-other-brews-that-ruled-this-year.jpeg"></div>
-      </div>
-      <div class="section indigo darken-4">
-        <div class="row container">
-          <h2 id= "art1" class="header"></h2>
-          <p class="orange-text"></p>
-          <a id="btn1" class="waves-effect waves-light btn #ffab00 amber accent-4" target="_blank"><span class="black-text">Read here</span></a>
-        </div>
-      </div>
-      <div class="parallax-container">
-        <div class="parallax"><img src="/assets/images/Guest_Beer_in_Breweries-social.jpeg"></div>
-      </div>
-      <div class="section indigo darken-4">
-        <div class="row container">
-          <h2 id= "art2" class="header"></h2>
-          <p class="orange-text"></p>
-          <a id="btn2" class="waves-effect waves-light btn #ffab00 amber accent-4" target="_blank"><span class="black-text">Read here</span></a>
-        </div>
-      </div>
-      <div class="parallax-container">
-        <div class="parallax"><img src="/assets/images/iStock-923450642.jpeg"></div>
-      </div>
-      <div class="section indigo darken-4">
-        <div class="row container">
-          <h2 id= "art3" class="header"></h2>
-          <p class="orange-text">.</p>
-          <a id="btn3" class="waves-effect waves-light btn #ffab00 amber accent-4" target="_blank"><span class="black-text">Read here</span></a>
-        </div>
-      </div>
-      <div class="parallax-container">
-        <div class="parallax"><img src="/assets/images/BrewHouse-DT-2-27-20.jpeg"></div>
-      </div>
-      <div class="section indigo darken-4">
-        <div class="row container">
-          <h2 id= "art4" class="header"></h2>
-          <p class="orange-text"></p>
-          <a id="btn4" class="waves-effect waves-light btn #ffab00 amber accent-4" target="_blank"><span class="black-text">Read here</span></a>
-        </div>
-      </div>
-      <div class="parallax-container">
-        <div class="parallax"><img src="/assets/images/small-brewery-demographics2.jpeg"></div>
-      </div>
-      <div class="section indigo darken-4">
-        <div class="row container">
-          <h2 id= "art5" class="header"></h2>
-          <p class="orange-text"></p>
-          <a id="btn5" class="waves-effect waves-light btn #ffab00 amber accent-4" target="_blank"><span class="black-text">Read here</span></a>
-        </div>
-      </div>
-      
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-      <script src="news.js"></script>
+  <div class="parallax-container">
+    <div class="parallax"><img class="responsive-img" src="/assets/images/image.jpeg"></div>
+  </div>
+  <div class="section orange lighten-1 brImage">
+    <div class="row container center orange lighten-1 brColor">
+      <h2 id="art1" class="header center"></h2>
+      <p class="black-text flow-text"></p>
+      <a id="btn1" class="waves-effect waves-light btn deep-orange darken-3" target="_blank"><span
+          class="black-text">Read here</span></a>
+    </div>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax"><img class="responsive-img" src="/assets/images/Guest_Beer_in_Breweries-social.jpeg"></div>
+  </div>
+  <div class="section orange lighten-1 brImage">
+    <div class="row container center orange lighten-1 brColor">
+      <h2 id="art2" class="header center"></h2>
+      <p class="black-text flow-text"></p>
+      <a id="btn2" class="waves-effect waves-light btn deep-orange darken-4" target="_blank"><span
+          class="black-text">Read here</span></a>
+    </div>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax"><img class="responsive-img" src="/assets/images/iStock-923450642.jpeg"></div>
+  </div>
+  <div class="section orange lighten-1 brImage">
+    <div class="row container center orange lighten-1 brColor">
+      <h2 id="art3" class="header center"></h2>
+      <p class="black-text flow-text">.</p>
+      <a id="btn3" class="waves-effect waves-light btn orange darken-4" target="_blank"><span class="black-text">Read
+          here</span></a>
+    </div>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax"><img class="responsive-img" src="/assets/images/BrewHouse-DT-2-27-20.jpeg"></div>
+  </div>
+  <div class="section orange lighten-1 brImage">
+    <div class="row container center orange lighten-1 brColor">
+      <h2 id="art4" class="header"></h2>
+      <p class="black-text flow-text"></p>
+      <a id="btn4" class="waves-effect waves-light btn orange darken-4" target="_blank"><span class="black-text">Read
+          here</span></a>
+    </div>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax"><img class="responsive-img" src="/assets/images/small-brewery-demographics2.jpeg"></div>
+  </div>
+  <div class="section orange lighten-1 brImage">
+    <div class="row container center orange lighten-1 brColor">
+      <h2 id="art5" class="header"></h2>
+      <p class="black-text flow-text"></p>
+      <a id="btn5" class="waves-effect waves-light btn orange darken-4" target="_blank"><span class="black-text">Read
+          here</span></a>
+    </div>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax"><img class="responsive-img" src="/assets/images/RNDOMWS7Z5BCXBOU3G6CEKNEHI.jpeg"></div>
+  </div>
+  <div class="section orange lighten-1 brImage">
+    <div class="row container center orange lighten-1 brColor">
+      <h2 id="art6" class="header"></h2>
+      <p class="black-text flow-text"></p>
+      <a id="btn6" class="waves-effect waves-light btn orange darken-4" target="_blank"><span class="black-text">Read
+          here</span></a>
+    </div>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax"><img class="responsive-img" src="/assets/images/_114780380_hornelanebrewery.jpeg"></div>
+  </div>
+  <div class="section orange lighten-1 brImage">
+    <div class="row container center orange lighten-1 brColor">
+      <h2 id="art7" class="header"></h2>
+      <p class="black-text flow-text"></p>
+      <a id="btn7" class="waves-effect waves-light btn orange darken-4" target="_blank"><span class="black-text">Read
+          here</span></a>
+    </div>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax"><img class="responsive-img" src="/assets/images/GettyImages-1093593288Tiny.jpeg"></div>
+  </div>
+  <div class="section orange lighten-1 brImage">
+    <div class="row container center orange lighten-1 brColor">
+      <h2 id="art8" class="header"></h2>
+      <p class="black-text flow-text"></p>
+      <a id="btn8" class="waves-effect waves-light btn orange darken-4" target="_blank"><span class="black-text">Read
+          here</span></a>
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="news.js"></script>
 
 </body>
+
 </html>
