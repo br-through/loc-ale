@@ -7,120 +7,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=IM+Fell+DW+Pica+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
     <link rel="icon" href="../assets/images/favicon.ico">
-    <title>Beer Finder</title>
+    <title>Loc-Ale</title>
 </head>
 
 <body>
+
+    <!-- The commented out buttons are for future functionality.  -->
     <nav>
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo"><img src="../assets/images/favicon.ico" alt="logo"></a>
+        <div class="nav-wrapper orange lighten-1">
+            <a href="index.html" class="brand-logo left"><img src="../assets/images/favicon.ico" alt="logo"
+                    class="laLogo"></a>
+            <a href="index.html" class="brand-logo center black-text cinzel">Brewery Info</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="badges.html">Brewery Finder</a></li>
-                <li><a href="collapsible.html">Local Brews Feed</a></li>
+                <li><a href="../News/index.html" class="black-text contentFont flow-text">Brews Feed</a></li>
+                <li class="active"><a href="../beerFinder/index.html" class="black-text contentFont flow-text">Brewery Info</a></li>
+                <li><a href="../findBrewery/indexbrew.html" class="black-text contentFont flow-text">Brewery Map</a></li>
             </ul>
         </div>
     </nav>
     <div class="parallax-container">
+        <div class="parallax"><img src="../assets/images/small-brewery-demographics2.jpeg" class="responsive-img"></div>
+    </div>
+    <div class="section parallaxBg">
+        <div class="row container orange lighten-1 parallaxContent">
+            <h2 class="header cinzel" id="breweryName0"></h2>
+            <img src="https://via.placeholder.com/150" alt="logo" class="col s3" id="breweryImg0">
+            <p class="col s9 grey-text text-darken-3 lighten-3 contentFont flow-text" id="breweryP0"></p>
+            <a class="waves-effect waves-light btn deep-orange darken-3 black-text" id="breweryButton0"
+                target="_blank"><i class="material-icons black-text right">web</i>Visit Website</a>
+            <!-- <a class="waves-effect waves-light btn deep-orange darken-3 black-text" id="breweryMap0" target="_blank"><i
+                    class="material-icons black-text right">map</i>See on the map!</a> -->
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax"><img
+                src="../assets/images/2019-beer-round-up-hoppy-ales-lagers-and-other-brews-that-ruled-this-year.jpeg">
+        </div>
+    </div>
+    <div class="section parallaxBg">
+        <div class="row container orange lighten-1 parallaxContent">
+            <h2 class="header" id="breweryName1">Dads</h2>
+            <img src="https://via.placeholder.com/150" alt="logo" class="col s3" id="breweryImg1">
+            <p class="col s9 grey-text text-darken-3 lighten-3 contentFont flow-text" id="breweryP1"></p>
+            <a class="waves-effect waves-light btn deep-orange darken-3 black-text" id="breweryButton1"
+                target="_blank"><i class="material-icons black-text right">web</i>Visit Website</a>
+            <!-- <a class="waves-effect waves-light btn deep-orange darken-3 black-text" id="breweryMap1" target="_blank"><i
+                    class="material-icons black-text right">map</i>See on the map!</a> -->
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax"><img src="../assets/images/BrewHouse-DT-2-27-20.jpeg"></div>
+    </div>
+    <div class="section parallaxBg">
+        <div class="row container orange lighten-1 parallaxContent">
+            <h2 class="header" id="breweryName2"></h2>
+            <img src="https://via.placeholder.com/150" alt="logo" class="col s3" id="breweryImg2">
+            <p class="col s9 grey-text text-darken-3 lighten-3 contentFont flow-text" id="breweryP2"></p>
+            <a class="waves-effect waves-light btn deep-orange darken-3 black-text" id="breweryButton2"
+                target="_blank"><i class="material-icons black-text right">web</i>Visit Website</a>
+            <!-- <a class="waves-effect waves-light btn deep-orange darken-3 black-text" id="breweryMap2" target="_blank"><i
+                    class="material-icons black-text right">map</i>See on the map!</a> -->
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax"><img src="../assets/images/Guest_Beer_in_Breweries-social.jpeg"></div>
+    </div>
+    <div class="section parallaxBg">
+        <div class="row container orange lighten-1 parallaxContent">
+            <h2 class="header" id="breweryName3"></h2>
+            <img src="https://via.placeholder.com/150" alt="logo" class="col s3" id="breweryImg3">
+            <p class="col s9 grey-text text-darken-3 lighten-3 contentFont flow-text" id="breweryP3"></p>
+            <a class="waves-effect waves-light btn deep-orange darken-3 black-text" id="breweryButton3"
+                target="_blank"><i class="material-icons black-text right">web</i>Visit Website</a>
+            <!-- <a class="waves-effect waves-light btn deep-orange darken-3 black-text" id="breweryMap3" target="_blank"><i
+                    class="material-icons black-text right">map</i>See on the map!</a> -->
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax"><img src="../assets/images/iStock-923450642.jpeg"></div>
+    </div>
+    <div class="section parallaxBg">
+        <div class="row container orange lighten-1 parallaxContent">
+            <h2 class="header" id="breweryName4"></h2>
+            <img src="https://via.placeholder.com/150" alt="logo" class="col s3" id="breweryImg4">
+            <p class="col s9 grey-text text-darken-3 lighten-3 contentFont flow-text" id="breweryP4"></p>
+            <a class="waves-effect waves-light btn deep-orange darken-3 black-text" id="breweryButton4"
+                target="_blank"><i class="material-icons black-text right">web</i>Visit Website</a>
+            <!-- <a class="waves-effect waves-light btn deep-orange darken-3 black-text" id="breweryMap4" target="_blank"><i
+                    class="material-icons black-text right">map</i>See on the map!</a> -->
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax"><img src="../assets/images/breweryImage1.jpg"></div>
+    </div>
+    <div class="section parallaxBg">
+        <div class="row container orange lighten-1 parallaxContent">
+            <h2 class="header" id="breweryName5"></h2>
+            <img src="https://via.placeholder.com/150" alt="logo" class="col s3" id="breweryImg5">
+            <p class="col s9 grey-text text-darken-3 lighten-3 contentFont flow-text" id="breweryP5"></p>
+            <a class="waves-effect waves-light btn deep-orange darken-3 black-text" id="breweryButton5"
+                target="_blank"><i class="material-icons black-text right">web</i>Visit Website</a>
+            <!-- <a class="waves-effect waves-light btn deep-orange darken-3 black-text" id="breweryMap5" target="_blank"><i
+                    class="material-icons black-text right">map</i>See on the map!</a> -->
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax"><img src="../assets/images/brewery.jpeg"></div>
+    </div>
+    <div class="section parallaxBg">
+        <div class="row container orange lighten-1 parallaxContent">
+            <h2 class="header" id="breweryName6"></h2>
+            <img src="https://via.placeholder.com/150" alt="logo" class="col s3" id="breweryImg6">
+            <p class="col s9 grey-text text-darken-3 lighten-3 contentFont flow-text" id="breweryP6"></p>
+            <a class="waves-effect waves-light btn deep-orange darken-3 black-text" id="breweryButton6"
+                target="_blank"><i class="material-icons black-text right">web</i>Visit Website</a>
+            <!-- <a class="waves-effect waves-light btn deep-orange darken-3 black-text" id="breweryMap6" target="_blank"><i
+                    class="material-icons black-text right">map</i>See on the map!</a> -->
+        </div>
+    </div>
+    <div class="parallax-container">
         <div class="parallax"><img src="../assets/images/beerParallax.jpg" class="responsive-img"></div>
     </div>
-    <div class="section white">
-        <div class="row container">
-            <h2 class="header" id="beerName1">Beer 1</h2>
-            <p class="col s9 grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in
-                this case, is moved at a different speed than the foreground content while scrolling.</p>
-            <img src="https://via.placeholder.com/150" alt="logo" class="col s3">
+    <div class="section parallaxBg">
+        <div class="row container orange lighten-1 parallaxContent">
+            <h2 class="header" id="breweryName7"></h2>
+            <img src="https://via.placeholder.com/150" alt="logo" class="col s3" id="breweryImg7">
+            <p class="col s9 grey-text text-darken-3 lighten-3 contentFont flow-text" id="breweryP7"></p>
+            <a class="waves-effect waves-light btn deep-orange darken-3 black-text" id="breweryButton7"
+                target="_blank"><i class="material-icons black-text right">web</i>Visit Website</a>
+            <!-- <a class="waves-effect waves-light btn deep-orange darken-3 black-text" id="breweryMap7" target="_blank"><i
+                    class="material-icons black-text right">map</i>See on the map!</a> -->
         </div>
     </div>
     <div class="parallax-container">
-        <div class="parallax"><img src="../assets/images/beerParallax.jpg"></div>
+        <div class="parallax"><img src="../assets/images/breweryImage2.png"></div>
     </div>
-    <div class="section white">
-        <div class="row container">
-            <h2 class="header" id="beerName2">Beer 2</h2>
-            <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in
-                this case, is moved at a different speed than the foreground content while scrolling.</p>
+    <div class="section parallaxBg">
+        <div class="row container orange lighten-1 parallaxContent">
+            <h2 class="header" id="breweryName8"></h2>
+            <img src="https://via.placeholder.com/150" alt="logo" class="col s3" id="breweryImg8">
+            <p class="col s9 grey-text text-darken-3 lighten-3 contentFont flow-text" id="breweryP8"></p>
+            <a class="waves-effect waves-light btn deep-orange darken-3 black-text" id="breweryButton8"
+                target="_blank"><i class="material-icons black-text right">web</i>Visit Website</a>
+            <!-- <a class="waves-effect waves-light btn deep-orange darken-3 black-text" id="breweryMap8" target="_blank"><i
+                    class="material-icons black-text right">map</i>See on the map!</a> -->
         </div>
     </div>
     <div class="parallax-container">
-        <div class="parallax"><img src="../assets/images/beerParallax.jpg"></div>
+        <div class="parallax"><img src="../assets/images/breweryImage3.jpg"></div>
     </div>
-    <div class="section white">
-        <div class="row container">
-            <h2 class="header" id="beerName3">Beer 3</h2>
-            <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in
-                this case, is moved at a different speed than the foreground content while scrolling.</p>
-        </div>
-    </div>
-    <div class="parallax-container">
-        <div class="parallax"><img src="../assets/images/beerParallax.jpg"></div>
-    </div>
-    <div class="section white">
-        <div class="row container">
-            <h2 class="header" id="beerName4">Beer 4</h2>
-            <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in
-                this case, is moved at a different speed than the foreground content while scrolling.</p>
-        </div>
-    </div>
-    <div class="parallax-container">
-        <div class="parallax"><img src="../assets/images/beerParallax.jpg"></div>
-    </div>
-    <div class="section white">
-        <div class="row container">
-            <h2 class="header" id="beerName5">Beer 5</h2>
-            <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in
-                this case, is moved at a different speed than the foreground content while scrolling.</p>
-        </div>
-    </div>
-    <div class="parallax-container">
-        <div class="parallax"><img src="../assets/images/beerParallax.jpg"></div>
-    </div>
-    <div class="section white">
-        <div class="row container">
-            <h2 class="header" id="beerName6">Beer 6</h2>
-            <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in
-                this case, is moved at a different speed than the foreground content while scrolling.</p>
-        </div>
-    </div>
-    <div class="parallax-container">
-        <div class="parallax"><img src="../assets/images/beerParallax.jpg"></div>
-    </div>
-    <div class="section white">
-        <div class="row container">
-            <h2 class="header" id="beerName7">Beer 7</h2>
-            <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in
-                this case, is moved at a different speed than the foreground content while scrolling.</p>
-        </div>
-    </div>
-    <div class="parallax-container">
-        <div class="parallax"><img src="../assets/images/beerParallax.jpg" class="responsive-img"></div>
-    </div>
-    <div class="section white">
-        <div class="row container">
-            <h2 class="header" id="beerName8">Beer 8</h2>
-            <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in
-                this case, is moved at a different speed than the foreground content while scrolling.</p>
-        </div>
-    </div>
-    <div class="parallax-container">
-        <div class="parallax"><img src="../assets/images/beerParallax.jpg"></div>
-    </div>
-    <div class="section white">
-        <div class="row container">
-            <h2 class="header" id="beerName9">Beer 9</h2>
-            <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in
-                this case, is moved at a different speed than the foreground content while scrolling.</p>
-        </div>
-    </div>
-    <div class="parallax-container">
-        <div class="parallax"><img src="../assets/images/beerParallax.jpg"></div>
-    </div>
-    <div class="section white">
-        <div class="row container">
-            <h2 class="header" id="beerName10">Beer 10</h2>
-            <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in
-                this case, is moved at a different speed than the foreground content while scrolling.</p>
+    <div class="section parallaxBg">
+        <div class="row container orange lighten-1 parallaxContent">
+            <h2 class="header" id="breweryName9"></h2>
+            <img src="https://via.placeholder.com/150" alt="logo" class="col s3" id="breweryImg9">
+            <p class="col s9 grey-text text-darken-3 lighten-3 contentFont flow-text" id="breweryP9"></p>
+            <a class="waves-effect waves-light btn deep-orange darken-3 black-text" id="breweryButton9"
+                target="_blank"><i class="material-icons black-text right">web</i>Visit Website</a>
+            <!-- <a class="waves-effect waves-light btn deep-orange darken-3 black-text" id="breweryMap9" target="_blank"><i
+                    class="material-icons black-text right">map</i>See on the map!</a> -->
         </div>
     </div>
 
