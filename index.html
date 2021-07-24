@@ -1,47 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="icon" href="assets/images/favicon.ico">
-    <title>Loc-Ale</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=IM+Fell+DW+Pica+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" href="assets/images/favicon.ico">
+  <title>Loc-Ale</title>
 </head>
+
 <body>
-    <div class="slider fullscreen">
-        <ul class="slides">
-            <li>
-              <img src="./assets/images/breweryImage1.jpg"> <!-- random image -->
-              <div class="caption center-align">
-                <h3>Loc-Ale</h3>
-                <h5 class="light grey-text text-lighten-3">Brews near yous!</h5>
-                <a class="waves-effect waves-light btn-large modal-trigger" id="enterWebsite" href="#modal1"><i class="material-icons left">cloud</i>Enter</a>
-              </div>
-            </li>
-        </ul>
-        <div id="modal1" class="modal yellow">
-            <div class="modal-content black-text">
-              <h4>Welcome to Loc-Ale, the local brewery finder!
-              </h4>
-              <p>By entering a city name and selecting "Agree", you are confirming that you are at least 21 years of age.</p>
+  <div class="slider fullscreen">
+    <ul class="slides">
+      <li>
+        <img src="./assets/images/breweryImage1.jpg">
+        <div class="caption center">
+          <div class="card orange lighten-1">
+            <div class="card-content">
+              <h1 class="cinzel black-text">Loc-Ale</h1>
+              <p class="contentFont black-text flow-text">Brews near yous!</p>
             </div>
-            <div class="container">
-              <div class="input-field col s6">
-                <input id="cityInput" type="text" class="validate">
-                <label for="cityInput">Enter a city name!</label>
-              </div>
-            </div>
-            <div class="modal-footer yellow">
-                <a href="#!" class="modal-close waves-effect waves-light btn-small" id="enterLandingPage"><i class="material-icons right">cloud</i>Agree</a>        
+            <div class="card-action">
+              <a class="waves-effect waves-light btn-large modal-trigger deep-orange darken-3 black-text contentFont" id="enterWebsite" href="#modal1"><i
+                class="material-icons right">arrow_forward</i>Enter</a>
             </div>
           </div>
+        </div>
+      </li>
+    </ul>
+    <div id="modal1" class="modal orange lighten-1">
+      <div class="modal-content black-text">
+        <h4 class="cinzel">Welcome to Loc-Ale, the local brewery finder!
+        </h4>
+        <p class="contentFont flow-text">By selecting one of the following buttons and entering the website, you are confirming that you are at least 21 years of age.</p>
+        <a href="./findBrewery/indexbrew.html"
+          class="modal-close waves-effect waves-light btn-small deep-orange darken-3 black-text contentFont"
+          id="enterLandingPage"><i class="material-icons black-text right">map</i>Brewery Map</a>
+        <a href="./beerFinder/index.html"
+          class="modal-close waves-effect waves-light btn-small deep-orange darken-3 black-text contentFont"
+          id="enterLandingPage"><i class="material-icons black-text right">info</i>Brewery Info</a>
+        <a href="./News/index.html"
+          class="modal-close waves-effect waves-light btn-small deep-orange darken-3 black-text contentFont"
+          id="enterLandingPage"><i class="material-icons black-text right">import_contacts</i>Brews Feed</a>
+      </div>
     </div>
-    
+  </div>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="assets/script.js"></script>
 </body>
+
 </html>

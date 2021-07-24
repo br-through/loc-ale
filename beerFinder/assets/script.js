@@ -28,27 +28,27 @@ $.ajax({
     }
     else if (data[i+randomIndex].brewery_type === "regional"){
       $(`#breweryImg${[i]}`).attr("src", "../assets/images/OfficalLocaleLogo.png")
-      $(`#breweryP${[i]}`).text(`${data[i+randomIndex].name} is located in ${data[i+randomIndex].city}, ${data[i+randomIndex].state}. Regional breweries are my dad.`)
+      $(`#breweryP${[i]}`).text(`${data[i+randomIndex].name} is located in ${data[i+randomIndex].city}, ${data[i+randomIndex].state}. Regional breweries large scale breweries that produce anywhere from 15,000 to 6,000,000 barrels anually. For comparison, two popular regional brewers are New Belgium Brewing Company and Sierra Nevada Brewing Company, though both of these are on the larger end of the regional brewery spectrum.`)
     }
     else if (data[i+randomIndex].brewery_type === "large"){
       $(`#breweryImg${[i]}`).attr("src", "../assets/images/OfficalLocaleLogo.png")
-      $(`#breweryP${[i]}`).text(`${data[i+randomIndex].name} is located in ${data[i+randomIndex].city}, ${data[i+randomIndex].state}. I slap my forehead at large breweries.`)
+      $(`#breweryP${[i]}`).text(`${data[i+randomIndex].name} is located in ${data[i+randomIndex].city}, ${data[i+randomIndex].state}. Large breweries are the biggest of all. Producing more than 6,000,000 barrels of beer a year, these breweries house some of the most well known brands across the country. From AB InBev to Molson Coors, these manufacturers and their various lines can be found in just about any local grocer or liquor vendor. Most bars and venues will also have their beers on tap.`)
     }
     else if (data[i+randomIndex].brewery_type === "brewpub"){
       $(`#breweryImg${[i]}`).attr("src", "../assets/images/OfficalLocaleLogo.png")
-      $(`#breweryP${[i]}`).text(`${data[i+randomIndex].name} is located in ${data[i+randomIndex].city}, ${data[i+randomIndex].state}. Last week I ate at a brewpub. It was great.`)
+      $(`#breweryP${[i]}`).text(`${data[i+randomIndex].name} is located in ${data[i+randomIndex].city}, ${data[i+randomIndex].state}. Unlike the various brewery sizes, brewpubs aren't bound by liquor production volume. To be considered a brewpub, a brewery must sell at least 25% of their beer on site as well as a variety of food items. Some larger breweries like Goose Island will have 1 off brewery locations designed specifically to be brewpubs, while their main lines are brewed at closed off locations.`)
     }
     else if (data[i+randomIndex].brewery_type === "planning"){
       $(`#breweryImg${[i]}`).attr("src", "../assets/images/OfficalLocaleLogo.png")
-      $(`#breweryP${[i]}`).text(`${data[i+randomIndex].name} is located in ${data[i+randomIndex].city}, ${data[i+randomIndex].state}. I plan to finish this textcontent, at somepoint.`)
+      $(`#breweryP${[i]}`).text(`${data[i+randomIndex].name} is located in ${data[i+randomIndex].city}, ${data[i+randomIndex].state}. This brewery is in it's planning stage and is not yet open.`)
     }
     else if (data[i+randomIndex].brewery_type === "contract"){
       $(`#breweryImg${[i]}`).attr("src", "../assets/images/OfficalLocaleLogo.png")
-      $(`#breweryP${[i]}`).text(`${data[i+randomIndex].name} is located in ${data[i+randomIndex].city}, ${data[i+randomIndex].state}. Can i contract someone out to finish this project for me?`)
+      $(`#breweryP${[i]}`).text(`${data[i+randomIndex].name} is located in ${data[i+randomIndex].city}, ${data[i+randomIndex].state}. Contract breweries are breweries that brew and package beer for other people/businesses. In some cases these breweries will also rent out their equipment for other brewers to use. This allows small time single batch brewers to produce beer without worrying about the hassle of owning and operating their own brewery. Many well known beers such as Sam Adams got their start through contract brewing. When contract brewing, the brewer must operate as if the facility was their own - maintaining all records and business practices.`)
     }
     else if (data[i+randomIndex].brewery_type === "proprietor"){
       $(`#breweryImg${[i]}`).attr("src", "../assets/images/OfficalLocaleLogo.png")
-      $(`#breweryP${[i]}`).text(`${data[i+randomIndex].name} is located in ${data[i+randomIndex].city}, ${data[i+randomIndex].state}. Proprietor`)
+      $(`#breweryP${[i]}`).text(`${data[i+randomIndex].name} is located in ${data[i+randomIndex].city}, ${data[i+randomIndex].state}. Similarly to Contract Breweries, brewers that operate under a proprietorship are producing beer using someone elses equipment. The difference here is that in a proprietorship the owner of the equipment/brewery is responsible for maintaining the records of ALL beer produced within their facility. Generally 2-3 brewers will enter a proprietorship together under a parent label.  `)
     }
     else if (data[i+randomIndex].brewery_type === "closed"){
       $(`#breweryImg${[i]}`).attr("src", "../assets/images/OfficalLocaleLogo.png")
@@ -57,13 +57,6 @@ $.ajax({
     }
   }
 });
-
-// $.ajax({
-//   "Access-Control-Allow-Origin": "https://serpapi.com/search.json?q=Apple&tbm=isch&ijn=0&api_key=955cb11439b5c86c1de91572de2db839ba42448d85d7f0d979f0fd5c8287b39a",
-//   // "Access-Control-Request-Method": "GET",
-// }).then(function(response){
-//   console.log(response)
-// })
 
 
   $(document).ready(function () {
