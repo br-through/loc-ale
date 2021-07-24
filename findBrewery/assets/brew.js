@@ -1,24 +1,43 @@
 const googleMapsApi = "AIzaSyA8FUlg5PThX8oT4_Vyqb7kd-dN_nvCEeM";
 
-//on click event for submit button
-// $("#submitBtn").click(function (event) {
-//   event.preventDefault();
-//   console.log("clicked")
-// })
 //Google Maps JS API (do not change function name)
 let map;
 function initMap() {
+  // function getCurrentLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+      M.toast({html: "Geolocation is not supported by this browser. Search a city to see the breweries populate on the map.", id:"toast-container"})
+    }
+  }
+
+  function showPosition(position) {
+    var lat = position.coords.latitude;
+    var lng = position.coords.longitude;
+    // center is required for google maps to work, set the lat and lng to current users position
+    var center = { center: { lat: lat, lng: lng }, zoom: 11 }
+
+    map = new google.maps.Map(document.getElementById("map"), center);
+
+  // }
+  // getCurrentLocation();
 
   //possible ask user for their location for that to be the input here. 
-  var center = {
-    center: { lat: 41.881, lng: -87.623 },
-    zoom: 11
-  }
-  map = new google.maps.Map(document.getElementById("map"), center);
+  // var center = {
+  //   center: { lat: 44.881, lng: -1.623 },
+  //   zoom: 11
+  // }
+
+  // map = new google.maps.Map(document.getElementById("map"), center);
 
   var geocoder = new google.maps.Geocoder();
-  document.getElementById("submitBtn").addEventListener("click", function () {
-    geocodeLocation(geocoder, map);
+  $("#submitBtn").on("click", function () {
+    if ($("#citySearched").val() === ""){
+      M.toast({html: 'Enter a valid city', id:"toast-container"})
+    } else{
+      geocodeLocation(geocoder, map);
+    }
+
   })
 };
 
@@ -34,6 +53,7 @@ function geocodeLocation(geocoder, resultsMap) {
 function breweryAPI() {
   var citySearched = $("#citySearched").val();
   //changed amt of data coming back due to incomplete information returning
+  //do this w an ajax call to make this more consistent w jquery 
   fetch("https://api.openbrewerydb.org/breweries?per_page=30&by_city=" + citySearched)
     .then(function (response) {
       return response.json();
@@ -41,14 +61,12 @@ function breweryAPI() {
     .then(function (data) {
       console.log(data)
       for (i = 0; i < data.length; i++) {
-        var namesOfBrewery= data[i].name;
+        var namesOfBrewery = data[i].name;
         var addressOfBrewery = data[i].street;
-        console.log( addressOfBrewery)
-        var longitude = JSON.parse(data[i].longitude);
-        // console.log(typeof longitude)
+        var longitude = JSON.parse(data[i].longitude); 
         var latitude = JSON.parse(data[i].latitude);
-        //go back and dbl check to see if any names of brewery are null. 
-        if (longitude != null && latitude != null && addressOfBrewery!=null && namesOfBrewery) {
+        //some breweries in the data base have null values for addresses/longitude/latitude
+        if (longitude != null && latitude != null && addressOfBrewery != null) {
           const addBeerMarker = new google.maps.Marker({
             position: {
               lat: latitude,
@@ -57,46 +75,27 @@ function breweryAPI() {
             map: map,
             icon: "/assets/images/favicon-32x32.png"
           })
-          //possibly add website of brewery 
-          //fix size of info window and only OPEN on click--rn it opens automatically. 
+          //this isnt working, w our w out the city searched parameter in the if statement.
+        //  if(data[i].length < 1 ){
+        //   alert("No Breweries found in this city, search another city.")
+        // }
           var contentElements =
-            '<h4 id="breweryName">' + namesOfBrewery + '</h4>' + '<h4 id="address">'+ addressOfBrewery + '</h4>';
+            '<h6 id="breweryName">' + namesOfBrewery + '</p>' + '<h6 id="address">' + addressOfBrewery + '</p>';
 
           const infowindow = new google.maps.InfoWindow({
             content: contentElements
           });
-          
-          infowindow.open({
-            anchor: addBeerMarker,
-            map,
-            shouldFocus: false,
-          });
-          addBeerMarker.addListener("click", infoWindowOnMarker)
 
-          //this might be where i have to move the infowindow code so that the window opens on click
+          addBeerMarker.addListener("click", function () {
+            console.log(this)
+            infowindow.open({
+              anchor: addBeerMarker,
+              map,
+              shouldFocus: false,
+            });
+          })
         }
       }
 
     })
 };
-
-// function infoWindowOnMarker() {
-//   console.log("this")
-
-// }
-//CAN STILL USE THIS AS SOON AS GOOGLE MAP LAUNCHES 
-// function getCurrentLocation(){
-  //     if (navigator.geolocation) {
-  //         navigator.geolocation.getCurrentPosition(showPosition);
-  //       } else {
-  //         alert("Geolocation is not supported by this browser.");
-  //       }
-  //     }
-  //     function showPosition(position) {
-  //       var lat = position.coords.latitude;
-  //       // console.log("lat" +lat)
-  //       var lng = position.coords.longitude;
-  //       // console.log("long."+ lng)
-  //       map.setCenter(new google.maps.LatLng(lat, lng));
-  //     }
-  // getCurrentLocation();
