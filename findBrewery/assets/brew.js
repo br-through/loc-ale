@@ -80,7 +80,7 @@ function breweryAPI() {
               lng: longitude
             },
             map: map,
-            icon: "/assets/images/favicon-32x32.png"
+            icon: "../assets/images/favicon-32x32.png"
           })
           //this isnt working, w our w out the city searched parameter in the if statement.
         //  if(data[i].lenth = 0 ){
