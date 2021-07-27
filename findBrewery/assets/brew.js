@@ -19,17 +19,6 @@ function initMap() {
 
     map = new google.maps.Map(document.getElementById("map"), center);
 
-  // }
-  // getCurrentLocation();
-
-  //possible ask user for their location for that to be the input here. 
-  // var center = {
-  //   center: { lat: 44.881, lng: -1.623 },
-  //   zoom: 11
-  // }
-
-  // map = new google.maps.Map(document.getElementById("map"), center);
-
   var geocoder = new google.maps.Geocoder();
   $("#submitBtn").on("click", function () {
     if ($("#citySearched").val() === ""){
@@ -52,11 +41,6 @@ function geocodeLocation(geocoder, resultsMap) {
 
 function breweryAPI() {
   var citySearched = $("#citySearched").val();
-  //changed amt of data coming back due to incomplete information returning
-  // fetch("https://api.openbrewerydb.org/breweries?per_page=30&by_city=" + citySearched)
-  //   .then(function (response) {
-  //     return response.json();
-  //   })
   $.ajax({
     url: "https://api.openbrewerydb.org/breweries?per_page=30&by_city=" + citySearched,
     method: "GET"
@@ -82,10 +66,6 @@ function breweryAPI() {
             map: map,
             icon: "../assets/images/favicon-32x32.png"
           })
-          //this isnt working, w our w out the city searched parameter in the if statement.
-        //  if(data[i].lenth = 0 ){
-        //   alert("No Breweries found in this city, search another city.")
-        // }
           //adding url as a hyperlink if the brewery has a website url in the breweryAPI
             if(webURL !== null){ 
             var contentElements =
@@ -110,7 +90,4 @@ function breweryAPI() {
 
     })
 };
-//notes
-//CHANGE DIMENSIONS OF MAP SO ITS EASIER TO VIEW/ I.E NO SCROLLING?
-// AND DONT ALLOW CHANGE VH??
-//br-through.github.io/*
+
