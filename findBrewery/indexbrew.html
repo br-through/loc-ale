@@ -11,40 +11,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./assets/stylebrewery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=IM+Fell+DW+Pica+SC&display=swap" rel="stylesheet">
-       
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=IM+Fell+DW+Pica+SC&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
- 
-        <nav>
-            <div class="nav-wrapper orange lighten-1">
-                
-                <a class="left brand-logo" id="navbarLogo"><img src="../assets/images/favicon.ico" alt="logo"></a>
-                <a id="titlePage" class=" brand-logo black-text flow-text title center">Brewery Map</a> 
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <!-- <li><a href="../index.html">Brewery Info</a></li> -->
-                    <li><a href="../News/index.html"class="black-text flow-text ">Brews Feed</a></li>
-                    <li><a href="../beerFinder/index.html" class=" black-text flow-text">Brewery Info</a></li>
-                    <li class="active"><a href="../findBrewery/indexbrew.html" class="black-text flow-text">Brewery Map</a></li>
-                    
-                
-                </ul>
-            </div>
-        </nav>
-        <div class="row center" id="backgroundIMG">
-           <div class="orange lighten-1 row" id="searchBox">
-                <h4 id="searchBarHeader">Find a Brewery Near You</h4>
-                <p class="flow-text">Search any U.S City to find up to 30 breweries in that city!</p>
-                <input id="citySearched" type="text" class="text-black" placeholder="City Name">
-                <a id="submitBtn" class="btn-large deep-orange darken-3 btn"><i class="tiny material-icons right">gps_fixed</i>Search</a>
-           </div>
+
+    <nav>
+        <div class="nav-wrapper orange lighten-1">
+
+            <a class="left brand-logo" id="navbarLogo"><img src="../assets/images/favicon.ico" alt="logo"></a>
+            <a id="titlePage" class=" brand-logo black-text flow-text title center">Brewery Map</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="../News/index.html" class="black-text flow-text ">Brews Feed</a></li>
+                <li><a href="../beerFinder/index.html" class=" black-text flow-text">Brewery Info</a></li>
+                <li class="active"><a href="../findBrewery/indexbrew.html" class="black-text flow-text">Brewery Map</a>
+                </li>
+
+
+            </ul>
         </div>
-        <div class="row">
-            <div id="map"></div>
+    </nav>
+    <div class="row center" id="backgroundIMG">
+        <div class="orange lighten-1 row" id="searchBox">
+            <h4 id="searchBarHeader">Find a Brewery Near You</h4>
+            <p class="flow-text">Search any U.S City to find up to 30 breweries in that city!</p>
+            <input id="citySearched" type="text" class="text-black" placeholder="City Name">
+            <a id="submitBtn" class="btn-large deep-orange darken-3 btn"><i
+                    class="tiny material-icons right">gps_fixed</i>Search</a>
         </div>
- 
+    </div>
+    <div class="row">
+        <div id="map"></div>
+    </div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
