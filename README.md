@@ -12,8 +12,8 @@ API's used in this project included the Google Maps API, Google Geolocation API,
 -When I click on the Brewery News tab, I am given news articles on breweries making headllines across the U.S.
 
 ## Link to Application
- ![LIVE URL](https://br-through.github.io/loc-ale/)
-![Presentation Link to Canva Slides](https://www.canva.com/design/DAElIWlss3A/h0bpUszU4gpHSDLFIExaCA/view?utm_content=DAElIWlss3A&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+ [LIVE URL](https://br-through.github.io/loc-ale/)
+[Presentation Link to Canva Slides](https://www.canva.com/design/DAElIWlss3A/h0bpUszU4gpHSDLFIExaCA/view?utm_content=DAElIWlss3A&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
 ## SCREENSHOTS
 ![LandingPagejpg](https://user-images.githubusercontent.com/80427770/127078796-115eb926-5f54-42d8-8255-adaaf0b9338b.jpg)
@@ -22,7 +22,7 @@ API's used in this project included the Google Maps API, Google Geolocation API,
 ![BrewsFeed](https://user-images.githubusercontent.com/80427770/127078793-6c4634e9-0646-41ad-8e66-d2f0f933113f.jpg)
 
 ## Contributors
-This was a team project that was created by @JanetIqal, @Mheer91, @Mnelson0911. As a team we agreed to take one aspect of the project and complete from start to finish-- from design, html ,to functionality using JavaScript or jQuery. We all enjoyed building this application and learned a lot with this approach. 
+This was a team project that was created by @JanetIqal, @ Mheer91, @Mnelson0911. As a team we agreed to take one aspect of the project and complete from start to finish-- from design, html ,to functionality using JavaScript or jQuery. We all enjoyed building this application and learned a lot with this approach. 
 @Mheer91 designed and built the landing page and the Brewery Info page.
 @Mnelson0911 designed and built the Brewery Feed page.
 I, @JanetIqal, designed and built the BreweryMap page. 
